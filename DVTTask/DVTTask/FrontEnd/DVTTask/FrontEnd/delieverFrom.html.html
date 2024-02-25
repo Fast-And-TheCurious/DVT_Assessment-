@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Delievery Form</title>
+    <link rel="stylesheet" href="/DVTTask/CSS/deliverForm.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>  
+    <div class="container">
+       <div class="form_body">
+        <form class="login-form">
+            <h1 class="login_title">Order Form</h1>
+            <div class="orderInfo">Please enter the required information</div>
+            <label for="login" class="login_form-label">
+                <input id="gmail" type="text" placeholder="Gmail"class="login-form_input">
+            </label>
+            <label for="product" class="login_form-label">
+                <input id="product" type="text" placeholder="Product"class="login-form_input">
+            </label>
+            <label for="numProduct" class="login_form-label">
+                <input id="numProducts" type="number" pattern="[0-9]+" placeholder="Number of product(s)"class="login-form_input">
+            </label>
+            <label for="delivery_Date" class="login_form-label">
+                <input id="deliveryDate" type="date" placeholder=" Delivery Date: dd-mm-yyyy"class="login-form_input">
+            </label>
+            <label for="deliveryAddress" class="login_form-label">
+                <input id="deliveryAddress" type="text" placeholder="Delivery Address" class="login-form_input">
+            </label>            
+            <label for="checkDeliveryStatus" class="login_form-label">
+                <div class="explanation">Deliver to you?</div>                
+                <div class="checkbox">
+                    <div id="deliveryStatus">Will deliver to you</div>
+                    <input type="checkbox" id="myCheck" onclick="updateDeliveryStatus()">
+                </div>
+            </label>
+            
+            <div class="textOutput" id="text"></div>
+            <div class="label_buttons-body">
+                <button id="formSubmitButton" type="button" onclick="validateForm()" class="login_button">Confirm</button>
+            </div>
+                   
+        </form>
+       </div> 
+    </div>
+</body>
+<script src="/DVTTask/JavaScript/DVTTask/JavaScript/delieverFrom.js"></script>
+</html>
